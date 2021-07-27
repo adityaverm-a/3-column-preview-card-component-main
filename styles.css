@@ -1,0 +1,125 @@
+:root {
+     --briOrange: hsl(31, 77%, 52%);
+     --darkCyan: hsl(184, 100%, 22%);
+     --vDarkCyan: hsl(179, 100%, 13%);
+
+     --transWhite: hsla(0, 0%, 100%, 0.75);
+     --vLightGrey: hsl(0, 0%, 95%);
+}
+
+*,
+*::after,
+*::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Lexend Deca', sans-serif;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-color: var(--vLightGrey);
+}
+
+.container {
+     display: flex;
+     min-height: 500px;
+     padding: 0 16em;
+     border-radius: 16px;
+}
+
+.car {
+     padding: 3em;
+}
+
+.car-1 {
+     background: var(--briOrange);
+}
+.car-2 {
+     background: var(--darkCyan);
+}
+.car-3 {
+     background: var(--vDarkCyan);
+}
+
+.car .logo {
+     margin-bottom: 2em;
+}
+
+.heading h1 {
+     color: var(--vLightGrey);
+     font-family: 'Big Shoulders Display', sans-serif;
+     font-size: 2.5rem;
+     margin-bottom: 1em;
+}
+
+.para p {
+     color: var(--transWhite);
+     line-height: 1.5;
+     margin-bottom: 6rem;
+}
+
+.btn {
+     border: 2px solid var(--vLightGrey);
+     border-radius: 2em;
+     background-color: transparent;
+     padding: 1em 0.75em;
+     color: var(--vLightGrey);
+     font-family: 'Lexend Deca', sans-serif;
+     font-size: 0.9rem;
+     min-width: 140px;
+     cursor: pointer;
+}
+
+.btn:hover {
+     background-color: var(--vLightGrey);
+}
+
+.car-1 .btn:hover {
+     color: var(--briOrange);
+}
+
+.car-2 .btn:hover {
+     color: var(--darkCyan);
+}
+
+.car-3 .btn:hover {
+     color: var(--vDarkCyan);
+}
+
+.attribution {
+     padding-top: 3em;
+     font-size: 0.75rem;
+     line-height: 20px;
+     text-align: center;
+     color: var(--darkCyan);
+     margin-bottom: 10px;
+}
+
+.attribution a {
+     text-decoration: none;
+     color: var(--darkCyan);
+     font-weight: bold;
+}
+
+.attribution a:hover {
+     color: var(--vDarkCyan);
+}
+
+@media (max-width: 1200px) {
+     .container {
+          padding: 0 11em;
+     }
+}
+
+@media (max-width: 768px) {
+     .container {
+          padding: 6em 2em 0;
+          flex-direction: column;
+          max-width: 425px;
+     }
+}
